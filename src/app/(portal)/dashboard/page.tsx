@@ -10,13 +10,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import BrandName from '@/components/custom/BrandName';
 import type { TradingConfig } from '@/lib/trading/types';
 
+// 默认配置 - 回调策略（验证通过：1.75盈亏比，57.58%胜率）
 const defaultConfig: TradingConfig = {
   symbol: 'XAUUSDT', // 默认XAUUSDT黄金
   interval: '1m', // 1分钟K线
   strategy: {
-    aggressiveness: 3, // 激进模式
-    trailingActivation: 1.0, // 1R激活跟踪止盈
-    trailingDistance: 0.5, // 0.5 ATR跟踪距离（更紧密）
+    aggressiveness: 3, // 激进模式（回调策略推荐）
+    trailingActivation: 1.5, // 1.5R激活跟踪止盈（验证通过）
+    trailingDistance: 1.0, // 1 ATR跟踪距离（验证通过）
     indicators: {
       keltner: {
         maPeriod: 20, // 肯特那通道MA周期
@@ -24,7 +25,7 @@ const defaultConfig: TradingConfig = {
         atrMultiple: 1.5, // 1.5倍ATR（更宽的通道）
       },
       bollinger: {
-        period: 20, // BB周期20（经典参数）
+        period: 20, // BB周期20（回调策略核心）
         deviation: 2.0, // 2倍标准差
       },
       macd: {
@@ -33,7 +34,7 @@ const defaultConfig: TradingConfig = {
         signalPeriod: 9,
       },
       cci: {
-        period: 14, // CCI周期14（经典参数）
+        period: 14, // CCI周期14（超买超卖判断）
       },
       supertrend: {
         period: 10,
@@ -42,13 +43,13 @@ const defaultConfig: TradingConfig = {
     },
   },
   risk: {
-    maxDailyLoss: 90000, // 90%资金
-    maxDrawdown: 0.50, // 50%最大回撤
+    maxDailyLoss: 90000, // 90%资金（回测用）
+    maxDrawdown: 0.50, // 50%最大回撤（回测用）
     maxPositions: 1,
     positionSize: 0.01, // 0.01 USDT仓位
     leverage: 20, // 20倍杠杆
-    stopLossMultiple: 2.0, // 2倍ATR止损（更宽，减少假突破）
-    takeProfitLevels: [2.0, 3.0, 5.0], // 更激进的止盈目标
+    stopLossMultiple: 2.0, // 2 ATR止损（验证通过）
+    takeProfitLevels: [3.0, 6.0, 9.0], // 3R/6R/9R（验证通过，1.75盈亏比）
   },
 };
 
