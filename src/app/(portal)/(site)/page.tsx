@@ -7,6 +7,8 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import EmailContactModal from '@/components/custom/EmailContactModal';
 import BrandName from '@/components/custom/BrandName';
+import BrandSlogans from '@/components/custom/BrandSlogans';
+import { FadeInSlide, ScaleFadeIn, HoverCard, PulseButton, FloatingBadge, StaggeredFadeIn } from '@/components/custom/AnimatedSection';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -53,32 +55,54 @@ const DummyContent = () => {
         <div className="relative flex items-center justify-center" style={{ minHeight: 'calc(100vh - 10rem)' }}>
           <div className="w-full">
             <Flex width="100%" align="center" justify="center" direction="column">
-              <div className="mb-4 flex justify-center">
-                <span className="px-4 py-2 bg-black text-white text-sm font-semibold border border-gray-800">
-                  {t('hero.title')}
-                </span>
-              </div>
-              <h1 className="text-6xl md:text-8xl font-extrabold text-center text-gray-900 dark:text-white mb-8 tracking-tight">
-                <BrandName />
-              </h1>
-              <p className="text-2xl md:text-3xl text-center text-gray-700 dark:text-gray-200 mb-12 font-semibold">
-                {t('hero.subtitle')}
-              </p>
+              <FadeInSlide direction="down" delay={0.2}>
+                <FloatingBadge>
+                  <div className="mb-4 flex justify-center">
+                    <span className="px-4 py-2 bg-black text-white text-sm font-semibold border border-gray-800">
+                      {t('hero.title')}
+                    </span>
+                  </div>
+                </FloatingBadge>
+              </FadeInSlide>
+
+              <ScaleFadeIn delay={0.4}>
+                <h1 className="text-6xl md:text-8xl font-extrabold text-center text-gray-900 dark:text-white mb-8 tracking-tight">
+                  <BrandName />
+                </h1>
+              </ScaleFadeIn>
+
+              <FadeInSlide direction="up" delay={0.6}>
+                <p className="text-2xl md:text-3xl text-center text-gray-700 dark:text-gray-200 mb-6 font-semibold">
+                  {t('hero.subtitle')}
+                </p>
+              </FadeInSlide>
+
+              {/* 动态标语 */}
+              <FadeInSlide direction="up" delay={0.8}>
+                <div className="mb-12">
+                  <BrandSlogans showEnglish={false} />
+                </div>
+              </FadeInSlide>
             </Flex>
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-              <button
-                onClick={() => router.push('/splan/join-us')}
-                className="px-10 py-5 bg-black text-white text-lg font-bold border-2 border-black hover:bg-white hover:text-black transition-colors"
-              >
-                {t('hero.cta.learn')}
-              </button>
-              <button
-                onClick={() => router.push('/dashboard')}
-                className="px-10 py-5 bg-white text-black text-lg font-bold border-2 border-black hover:bg-black hover:text-white transition-colors"
-              >
-                {t('hero.cta.dashboard')}
-              </button>
-            </div>
+
+            <FadeInSlide direction="up" delay={1.0}>
+              <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+                <PulseButton>
+                  <button
+                    onClick={() => router.push('/splan/join-us')}
+                    className="px-10 py-5 bg-black text-white text-lg font-bold border-2 border-black hover:bg-white hover:text-black transition-colors"
+                  >
+                    {t('hero.cta.learn')}
+                  </button>
+                </PulseButton>
+                <button
+                  onClick={() => router.push('/dashboard')}
+                  className="px-10 py-5 bg-white text-black text-lg font-bold border-2 border-black hover:bg-black hover:text-white transition-colors"
+                >
+                  {t('hero.cta.dashboard')}
+                </button>
+              </div>
+            </FadeInSlide>
           </div>
         </div>
       </BackgroundBeamsWithCollision>
@@ -94,33 +118,47 @@ const DummyContent = () => {
 
         {/* 核心优势 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
-            <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
-              <span className="text-2xl text-white dark:text-black font-bold">1</span>
-            </div>
-            <h3 className="text-2xl font-bold mb-4">{t('advantage.selection.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              {t('advantage.selection.desc')}
-            </p>
-          </div>
-          <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
-            <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
-              <span className="text-2xl text-white dark:text-black font-bold">2</span>
-            </div>
-            <h3 className="text-2xl font-bold mb-4">{t('advantage.growth.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              {t('advantage.growth.desc')}
-            </p>
-          </div>
-          <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
-            <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
-              <span className="text-2xl text-white dark:text-black font-bold">3</span>
-            </div>
-            <h3 className="text-2xl font-bold mb-4">{t('advantage.commission.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              {t('advantage.commission.desc')}
-            </p>
-          </div>
+          <FadeInSlide direction="up" delay={0.1}>
+            <HoverCard className="h-full">
+              <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full hover:border-black dark:hover:border-white transition-colors">
+                <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
+                  <span className="text-2xl text-white dark:text-black font-bold">1</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{t('advantage.selection.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {t('advantage.selection.desc')}
+                </p>
+              </div>
+            </HoverCard>
+          </FadeInSlide>
+
+          <FadeInSlide direction="up" delay={0.2}>
+            <HoverCard className="h-full">
+              <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full hover:border-black dark:hover:border-white transition-colors">
+                <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
+                  <span className="text-2xl text-white dark:text-black font-bold">2</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{t('advantage.growth.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {t('advantage.growth.desc')}
+                </p>
+              </div>
+            </HoverCard>
+          </FadeInSlide>
+
+          <FadeInSlide direction="up" delay={0.3}>
+            <HoverCard className="h-full">
+              <div className="p-8 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full hover:border-black dark:hover:border-white transition-colors">
+                <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
+                  <span className="text-2xl text-white dark:text-black font-bold">3</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{t('advantage.commission.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {t('advantage.commission.desc')}
+                </p>
+              </div>
+            </HoverCard>
+          </FadeInSlide>
         </div>
 
         {/* 与传统培训对比 */}
