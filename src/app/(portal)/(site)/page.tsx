@@ -12,7 +12,6 @@ import { FadeInSlide, ScaleFadeIn, HoverCard, PulseButton, FloatingBadge, Stagge
 import Testimonials from '@/components/custom/Testimonials';
 import StatsSection from '@/components/custom/StatsSection';
 import InterviewCTA from '@/components/custom/InterviewCTA';
-import CandidateRequirements from '@/components/custom/CandidateRequirements';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ShineButton from '@/components/custom/ShineButton';
@@ -373,9 +372,9 @@ const DummyContent = () => {
         </p>
 
         {/* 条件卡片 */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {/* 人群画像 */}
-          <div className="bg-gradient-to-br from-black to-gray-800 dark:from-white dark:to-gray-200 p-8 border-2 border-black dark:border-white">
+          <div className="bg-black dark:bg-white p-8 border-2 border-black dark:border-white">
             <div className="text-white dark:text-black">
               <div className="text-5xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-6">{t('req.profile.title')}</h3>
@@ -397,7 +396,7 @@ const DummyContent = () => {
           </div>
 
           {/* 时间与环境 */}
-          <div className="bg-white dark:bg-gray-800 p-8 border-2 border-gray-300 dark:border-gray-600">
+          <div className="bg-white dark:bg-black p-8 border-2 border-black dark:border-white">
             <div className="text-5xl mb-4"></div>
             <h3 className="text-2xl font-bold mb-6 text-black dark:text-white">{t('req.time.title')}</h3>
             <div className="space-y-4">
@@ -438,30 +437,49 @@ const DummyContent = () => {
           </div>
 
           {/* 在线时间 */}
-          <div className="bg-white dark:bg-gray-800 p-8 border-2 border-gray-300 dark:border-gray-600">
-            <div className="text-5xl mb-4"></div>
-            <h3 className="text-2xl font-bold mb-6 text-black dark:text-white">{t('req.online.title')}</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-black dark:bg-white flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white dark:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+          <div className="bg-black dark:bg-white p-8 border-2 border-black dark:border-white">
+            <div className="text-white dark:text-black">
+              <div className="text-5xl mb-4"></div>
+              <h3 className="text-2xl font-bold mb-6">{t('req.online.title')}</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-white dark:border-black pl-4">
+                  <p className="font-bold text-lg">{t('req.online.hours')}</p>
+                  <p className="text-sm text-gray-300 dark:text-gray-700">{t('req.online.hours.desc')}</p>
                 </div>
-                <div>
-                  <p className="font-bold text-gray-900 dark:text-white">{t('req.online.hours')}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('req.online.hours.desc')}</p>
+                <div className="border-l-4 border-white dark:border-black pl-4">
+                  <p className="font-bold text-lg">{t('req.online.debrief')}</p>
+                  <p className="text-sm text-gray-300 dark:text-gray-700">{t('req.online.debrief.desc')}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-black dark:bg-white flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white dark:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+            </div>
+          </div>
+
+          {/* 适合与否 */}
+          <div className="bg-white dark:bg-black p-8 border-2 border-black dark:border-white">
+            <div className="text-black dark:text-white">
+              <div className="text-5xl mb-4"></div>
+              <h3 className="text-2xl font-bold mb-6">{t('unsuitable.title')}</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-black dark:border-white pl-4">
+                  <p className="font-bold text-lg flex items-center gap-2">
+                    <span className="text-red-600 dark:text-red-500">✗</span>
+                    {t('unsuitable.pressure')}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-400">{t('unsuitable.pressure.desc')}</p>
                 </div>
-                <div>
-                  <p className="font-bold text-gray-900 dark:text-white">{t('req.online.debrief')}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('req.online.debrief.desc')}</p>
+                <div className="border-l-4 border-black dark:border-white pl-4">
+                  <p className="font-bold text-lg flex items-center gap-2">
+                    <span className="text-red-600 dark:text-red-500">✗</span>
+                    {t('unsuitable.gambler')}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-400">{t('unsuitable.gambler.desc')}</p>
+                </div>
+                <div className="border-l-4 border-black dark:border-white pl-4">
+                  <p className="font-bold text-lg flex items-center gap-2">
+                    <span className="text-green-600 dark:text-green-500">✓</span>
+                    {t('expectations.mindset')}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-400">{t('expectations.mindset.desc')}</p>
                 </div>
               </div>
             </div>
@@ -685,9 +703,6 @@ const DummyContent = () => {
 
       {/* Testimonials */}
       <Testimonials />
-
-      {/* Candidate Requirements */}
-      <CandidateRequirements />
 
       {/* Interview CTA */}
       <InterviewCTA />

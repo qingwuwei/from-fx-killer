@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import EmailContactModal from '@/components/custom/EmailContactModal';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ShineButton from '@/components/custom/ShineButton';
-import CandidateRequirements from '@/components/custom/CandidateRequirements';
 
 export default function JoinUsPage() {
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
@@ -431,9 +430,6 @@ export default function JoinUsPage() {
             </div>
           </div>
         </section>
-
-        {/* Candidate Requirements */}
-        <CandidateRequirements />
 
         {/* CTA */}
         <section className="text-center bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-12 border-2 border-gray-200 dark:border-gray-700">

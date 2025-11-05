@@ -268,13 +268,10 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
             {language === 'zh' ? '学员感言' : 'Student Testimonials'}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-4">
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {language === 'zh'
               ? '来自真实学员的反馈，他们通过系统培训成为职业交易员'
               : 'Real feedback from students who became professional traders through systematic training'}
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-500">
-            {language === 'zh' ? '自动滚动中...' : 'Auto-scrolling...'}
           </p>
         </motion.div>
 
