@@ -152,7 +152,7 @@ export default function EducationPageTemplate({
                     ? '/splan/psychology-test'
                     : content.ctaPrimaryButton.includes('使用工具') ||
                       content.ctaPrimaryButton.includes('Use Tools')
-                    ? '/dashboard'
+                    ? '/tools'
                     : '/splan/join-us'
                 }
                 className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white font-bold text-lg border-2 border-white dark:border-black hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:hover:text-black transition-all inline-block text-center"
@@ -168,8 +168,10 @@ export default function EducationPageTemplate({
                     : content.ctaSecondaryButton.includes('技术分析工具') ||
                       content.ctaSecondaryButton.includes('Technical Analysis Tools') ||
                       content.ctaSecondaryButton.includes('价格行为工具') ||
-                      content.ctaSecondaryButton.includes('Price Action Tools')
-                    ? '/dashboard'
+                      content.ctaSecondaryButton.includes('Price Action Tools') ||
+                      content.ctaSecondaryButton.includes('使用工具') ||
+                      content.ctaSecondaryButton.includes('Use Tools')
+                    ? '/tools'
                     : '/splan/join-us'
                 }
                 className="px-10 py-4 bg-transparent text-white dark:text-black font-bold text-lg border-2 border-white dark:border-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all inline-block text-center"

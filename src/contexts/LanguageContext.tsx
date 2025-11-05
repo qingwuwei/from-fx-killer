@@ -9,6 +9,7 @@ interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
   t: (key: string) => string;
+  mounted: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -980,17 +981,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
-  // Get initial language from localStorage or URL
+  // Get initial language from URL (works on both server and client)
   const getInitialLanguage = (): Language => {
-    if (typeof window === 'undefined') return 'zh';
-
-    // Try localStorage first
-    const stored = localStorage.getItem('language');
-    if (stored === 'en' || stored === 'zh') {
-      return stored;
-    }
-
-    // Fallback to URL
+    // Always use URL as source of truth
     const locale = pathname.split('/')[1];
     return locale === 'en' ? 'en' : 'zh';
   };
@@ -1049,7 +1042,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, toggleLanguage, t, mounted }}>
       {children}
     </LanguageContext.Provider>
   );
