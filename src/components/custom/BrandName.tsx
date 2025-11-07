@@ -1,23 +1,58 @@
 "use client";
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 export default function BrandName() {
   const { language } = useLanguage();
+  const [hasAnimated, setHasAnimated] = useState(false);
 
-  if (language === 'zh') {
-    return (
-      <>
-        <span className="font-black text-black dark:text-white">汇</span>
-        <span className="font-normal text-gray-600 dark:text-gray-400">刃</span>
-      </>
-    );
-  }
+  useEffect(() => {
+    // 标记动画已播放，避免切换语言时重复播放
+    const timer = setTimeout(() => {
+      setHasAnimated(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const text = language === 'zh' ? '汇刃' : 'FXKiller';
+  const chars = text.split('');
 
   return (
     <>
-      <span className="font-black text-black dark:text-white">FX</span>
-      <span className="font-normal text-gray-600 dark:text-gray-400">Killer</span>
+      {chars.map((char, index) => {
+        const isSecondPart = language === 'zh' ? index >= 1 : index >= 2;
+
+        return (
+          <motion.span
+            key={`${language}-${index}`}
+            className={isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white'}
+            initial={hasAnimated ? false : {
+              x: (index % 2 === 0 ? -1 : 1) * 150,
+              y: (index % 3 === 0 ? -1 : 1) * 80,
+              opacity: 0,
+              rotate: (index % 2 === 0 ? -1 : 1) * 45,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              y: 0,
+              opacity: 1,
+              rotate: 0,
+              scale: 1,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 80,
+              damping: 12,
+              delay: hasAnimated ? 0 : index * 0.08,
+            }}
+          >
+            {char}
+          </motion.span>
+        );
+      })}
     </>
   );
 }
