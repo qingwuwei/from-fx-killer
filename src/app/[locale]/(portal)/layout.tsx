@@ -11,6 +11,8 @@ import Providers from "@/components/providers/Providers";
 import MouseFollower from "@/components/effects/MouseFollower";
 import ScrollProgress, { BackToTop } from "@/components/effects/ScrollProgress";
 import PageLoader from "@/components/effects/PageLoader";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -118,6 +120,8 @@ export default async function PortalLayout({
           <FloatingContactForm />
           <WelcomeModalWrapper />
           <SubscriptionNotification />
+          <Analytics />
+          <SpeedInsights />
         </Providers>
       </body>
     </html>
