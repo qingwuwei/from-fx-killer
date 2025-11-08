@@ -127,26 +127,29 @@ async function rewriteWithGroqZh(content) {
         messages: [
           {
             role: 'system',
-            content: '你是专业的外汇分析师，擅长将外汇新闻改写为SEO友好的中文内容。'
+            content: '你是专业的外汇分析师。将外汇新闻改写为SEO友好的中文内容。只返回改写后的文章内容，不要有任何解释、推理过程或元信息。'
           },
           {
             role: 'user',
-            content: `请将以下外汇新闻改写为独特的中文内容：
+            content: `改写以下外汇新闻：
 
-原文：${content}
+${content}
 
-要求：
-1. 第一行输出中文标题（翻译原标题）
-2. 保持核心信息不变
-3. 改变表达方式和句子结构
-4. 自然融入关键词：外汇、交易
-5. 正文字数严格控制在150-200字之间
-6. 不包含任何推广链接或广告
-7. 格式：第一行=标题，空一行，然后是正文`
+严格要求：
+1. 第一行必须是中文标题（翻译原标题）
+2. 只返回文章内容，不要有"改写后的内容"等标签
+3. 不要解释你的改写过程
+4. 保持核心信息不变
+5. 改变表达方式和句子结构
+6. 自然融入关键词：外汇、交易
+7. 正文分成2-3个段落，每段3-4句话
+8. 总字数200-250字
+9. 段落之间空一行
+10. 立即开始写文章`
           }
         ],
         temperature: 0.7,
-        max_tokens: 500
+        max_tokens: 600
       },
       {
         headers: {
@@ -178,25 +181,29 @@ async function rewriteWithGroqEn(content) {
         messages: [
           {
             role: 'system',
-            content: 'You are a professional forex analyst skilled at rewriting forex news into SEO-friendly English content.'
+            content: 'You are a professional forex analyst. Rewrite forex news into SEO-friendly English content. Return ONLY the rewritten article content, NO explanations, NO meta-commentary, NO "rewritten content" labels.'
           },
           {
             role: 'user',
-            content: `Please rewrite the following forex news into unique English content:
+            content: `Rewrite this forex news:
 
-Original: ${content}
+${content}
 
-Requirements:
-1. Keep core information unchanged
-2. Change expression and sentence structure
-3. Naturally integrate keywords: forex, trading
-4. Strictly control word count to 100-150 words
-5. Do not include any promotional links or ads
-6. Return only the rewritten body content, no title, no other explanations`
+CRITICAL RULES:
+1. Return ONLY the article paragraphs - nothing else
+2. NO labels like "Rewritten Content" or "Reasoning"
+3. NO explanations about your process
+4. Keep core facts unchanged
+5. Use different expressions and sentence structures
+6. Include keywords: forex, trading
+7. Write 2-3 paragraphs, each with 3-4 sentences
+8. 150-200 words total
+9. Separate paragraphs with blank lines
+10. Start writing the article IMMEDIATELY`
           }
         ],
         temperature: 0.7,
-        max_tokens: 300
+        max_tokens: 400
       },
       {
         headers: {
@@ -217,23 +224,49 @@ Requirements:
 // 简单改写（中文备用）
 function simpleRewriteZh(content) {
   const parts = content.split('\n');
-  const desc = parts.slice(1).join(' ').substring(0, 150);
+  const englishTitle = parts[0].trim();
+  const desc = parts.slice(1).join(' ').substring(0, 100);
 
-  return `外汇市场最新动态显示，${desc}
+  // 简单的英译中标题（基于常见交易术语）
+  let chineseTitle = englishTitle
+    .replace(/USD\/JPY/gi, '美元/日元')
+    .replace(/EUR\/USD/gi, '欧元/美元')
+    .replace(/GBP\/USD/gi, '英镑/美元')
+    .replace(/AUD\/USD/gi, '澳元/美元')
+    .replace(/USD\/CAD/gi, '美元/加元')
+    .replace(/NZD\/USD/gi, '纽元/美元')
+    .replace(/USD\/CHF/gi, '美元/瑞郎')
+    .replace(/XAU\/USD/gi, '黄金/美元')
+    .replace(/XAG\/USD/gi, '白银/美元')
+    .replace(/Price Forecast/gi, '价格预测')
+    .replace(/Technical Analysis/gi, '技术分析')
+    .replace(/Market Update/gi, '市场更新')
+    .replace(/rebounds/gi, '反弹')
+    .replace(/rises/gi, '上涨')
+    .replace(/falls/gi, '下跌')
+    .replace(/steady/gi, '稳定')
+    .replace(/tops/gi, '突破')
+    .replace(/struggles/gi, '承压');
 
-市场分析师指出，当前外汇交易市场波动加剧，投资者需要密切关注相关经济数据和技术指标。交易员建议谨慎操作，严格控制风险，合理设置止损止盈。
+  return `${chineseTitle}
 
-专业交易者提醒，外汇市场存在不确定性，投资决策应基于充分的市场分析和风险评估。`;
+外汇市场最新动态显示，${desc}
+
+市场分析师指出，当前外汇交易环境复杂多变，投资者需要密切关注相关经济数据和技术指标的变化。专业交易员建议，在当前市场环境下应谨慎操作，严格控制风险，合理设置止损止盈位。
+
+技术面分析显示，关键支撑位和阻力位对交易决策至关重要。外汇交易者应结合基本面和技术面进行综合分析，制定合理的交易策略。市场波动性增加时，更需要保持冷静，避免情绪化交易。`;
 }
 
 // 简单改写（英文备用）
 function simpleRewriteEn(content) {
   const parts = content.split('\n');
-  const desc = parts.slice(1).join(' ').substring(0, 120);
+  const desc = parts.slice(1).join(' ').substring(0, 100);
 
   return `Latest forex market updates indicate ${desc}
 
-Market analysts point out that forex trading volatility has increased. Traders are advised to monitor economic data closely and implement strict risk management strategies.`;
+Market analysts point out that forex trading volatility has increased significantly in recent sessions. Traders are advised to monitor economic data releases closely and maintain strict risk management protocols when executing trades.
+
+Technical indicators suggest key support and resistance levels remain crucial for trading decisions. Forex market participants should combine fundamental and technical analysis to develop robust trading strategies in the current environment.`;
 }
 
 // 生成slug
@@ -311,11 +344,14 @@ async function generateContent() {
         const zhTitle = zhLines[0].trim();
         const zhBody = zhLines.slice(1).filter(line => line.trim()).join('\n\n');
 
+        // 从中文正文中提取前100字作为描述
+        const zhDescription = zhBody.replace(/\n/g, ' ').substring(0, 150);
+
         // 生成中文Markdown
         const markdownZh = `---
 title: "${zhTitle.replace(/"/g, '\\"')}"
 date: "${dayjs().format('YYYY-MM-DD HH:mm:ss')}"
-description: "${cleanDesc.substring(0, 150).replace(/"/g, '\\"')}"
+description: "${zhDescription.replace(/"/g, '\\"')}"
 keywords: ["外汇", "交易", "市场分析", "外汇新闻"]
 category: "外汇新闻"
 source: "FX Killer 分析团队"
@@ -360,11 +396,14 @@ ${contentEn}
         console.log(`✅ 生成: ${dirName} (中英双语)`);
         totalGenerated++;
 
-        // 控制速度，避免触发限制（250次/天，70K token/分钟）
-        await sleep(5000); // 5秒间隔
+        // 控制速度，避免触发限制
+        // 每分钟限制：70K token, 30次请求
+        // 每篇文章约2次请求（中文+英文），约2K tokens
+        // 安全间隔：10秒，确保每分钟最多6次请求，约12K tokens
+        await sleep(10000); // 10秒间隔
 
-        // 每次运行最多生成5篇
-        if (totalGenerated >= 5) {
+        // 每次运行最多生成3篇（6个请求，约6K tokens）
+        if (totalGenerated >= 3) {
           break;
         }
       }

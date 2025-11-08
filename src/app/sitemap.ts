@@ -1,4 +1,7 @@
 import { MetadataRoute } from 'next'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://fxkiller.com'
@@ -13,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 核心功能页面
     { path: '/dashboard', priority: 0.95, changeFrequency: 'daily' as const },
     { path: '/history', priority: 0.85, changeFrequency: 'weekly' as const },
+
+    // 新闻页面
+    { path: '/news', priority: 0.95, changeFrequency: 'hourly' as const },
+    { path: '/economic-calendar', priority: 0.9, changeFrequency: 'daily' as const },
+    { path: '/top-traders', priority: 0.85, changeFrequency: 'daily' as const },
 
     // 工具页面
     { path: '/tools/position-calculator', priority: 0.9, changeFrequency: 'weekly' as const },
@@ -94,6 +102,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     })
   })
+
+  // 添加动态新闻文章
+  const newsDir = path.join(process.cwd(), 'src/content/news')
+  if (fs.existsSync(newsDir)) {
+    const folders = fs.readdirSync(newsDir).filter(item => {
+      const itemPath = path.join(newsDir, item)
+      return fs.statSync(itemPath).isDirectory()
+    })
+
+    folders.forEach(folder => {
+      const zhPath = path.join(newsDir, folder, 'zh.md')
+      const enPath = path.join(newsDir, folder, 'en.md')
+
+      let articleDate = lastModified
+
+      // 获取文章日期
+      if (fs.existsSync(zhPath)) {
+        const { data } = matter(fs.readFileSync(zhPath, 'utf8'))
+        articleDate = new Date(data.date)
+      } else if (fs.existsSync(enPath)) {
+        const { data } = matter(fs.readFileSync(enPath, 'utf8'))
+        articleDate = new Date(data.date)
+      }
+
+      // 为每个语言版本添加sitemap条目
+      languages.forEach(lang => {
+        sitemap.push({
+          url: `${baseUrl}/${lang}/news/${folder}`,
+          lastModified: articleDate,
+          changeFrequency: 'daily',
+          priority: 0.8,
+          alternates: {
+            languages: {
+              zh: `${baseUrl}/zh/news/${folder}`,
+              en: `${baseUrl}/en/news/${folder}`,
+            },
+          },
+        })
+      })
+    })
+  }
 
   // 添加根域名（重定向到默认语言）
   sitemap.unshift({

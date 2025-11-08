@@ -2,10 +2,8 @@ name: Auto Fetch Forex News
 
 on:
   schedule:
-    # 每天3次：北京时间 8:00, 14:00, 20:00
-    - cron: '0 0 * * *'   # UTC 0:00 = 北京 8:00
-    - cron: '0 6 * * *'   # UTC 6:00 = 北京 14:00
-    - cron: '0 12 * * *'  # UTC 12:00 = 北京 20:00
+    # 每30分钟运行一次
+    - cron: '*/30 * * * *'
   workflow_dispatch: # 允许手动触发
 
 jobs:

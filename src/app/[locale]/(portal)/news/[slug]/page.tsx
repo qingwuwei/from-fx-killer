@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
 import LocaleLink from '@/components/navigation/LocaleLink';
 import ReactMarkdown from 'react-markdown';
+import InterviewCTA from '@/components/custom/InterviewCTA';
 
 interface NewsPageProps {
   params: Promise<{
@@ -200,22 +201,137 @@ export default async function NewsDetailPage({ params }: NewsPageProps) {
 
           {/* Article Content */}
           <article className="flex-1 min-w-0">
-            <div className="prose prose-lg dark:prose-invert max-w-none
-              prose-headings:text-gray-900 dark:prose-headings:text-white
-              prose-p:text-gray-800 dark:prose-p:text-gray-200
-              prose-p:leading-relaxed prose-p:mb-4
-              prose-strong:text-gray-900 dark:prose-strong:text-white
-              prose-a:text-blue-600 dark:prose-a:text-blue-400">
-              <ReactMarkdown>{news.content}</ReactMarkdown>
+            {/* Article Body with Medium-style Styling */}
+            <div className="mb-8">
+              <div className="max-w-none">
+                <ReactMarkdown
+                  components={{
+                    p: ({node, children, ...props}) => (
+                      <p
+                        className="text-[21px] leading-[32px] text-gray-800 dark:text-gray-200 mb-8"
+                        {...props}
+                      >
+                        {children}
+                      </p>
+                    ),
+                    h1: ({node, children, ...props}) => (
+                      <h1
+                        className="text-[42px] leading-[48px] font-bold text-gray-900 dark:text-white mb-6 mt-12"
+                        {...props}
+                      >
+                        {children}
+                      </h1>
+                    ),
+                    h2: ({node, children, ...props}) => (
+                      <h2
+                        className="text-[32px] leading-[40px] font-bold text-gray-900 dark:text-white mb-6 mt-10"
+                        {...props}
+                      >
+                        {children}
+                      </h2>
+                    ),
+                    h3: ({node, children, ...props}) => (
+                      <h3
+                        className="text-[26px] leading-[32px] font-bold text-gray-900 dark:text-white mb-5 mt-8"
+                        {...props}
+                      >
+                        {children}
+                      </h3>
+                    ),
+                    strong: ({node, children, ...props}) => (
+                      <strong
+                        className="font-bold text-gray-900 dark:text-white"
+                        {...props}
+                      >
+                        {children}
+                      </strong>
+                    ),
+                    em: ({node, children, ...props}) => (
+                      <em
+                        className="italic text-gray-800 dark:text-gray-200"
+                        {...props}
+                      >
+                        {children}
+                      </em>
+                    ),
+                    a: ({node, children, ...props}) => (
+                      <a
+                        className="text-gray-900 dark:text-white underline decoration-gray-900 dark:decoration-white underline-offset-2 hover:opacity-70 transition-opacity"
+                        {...props}
+                      >
+                        {children}
+                      </a>
+                    ),
+                    blockquote: ({node, children, ...props}) => (
+                      <blockquote
+                        className="border-l-4 border-gray-900 dark:border-white pl-6 pr-6 py-2 my-8 italic text-[21px] leading-[32px] text-gray-700 dark:text-gray-300"
+                        {...props}
+                      >
+                        {children}
+                      </blockquote>
+                    ),
+                    ul: ({node, children, ...props}) => (
+                      <ul
+                        className="mb-8 pl-8 list-disc"
+                        {...props}
+                      >
+                        {children}
+                      </ul>
+                    ),
+                    ol: ({node, children, ...props}) => (
+                      <ol
+                        className="mb-8 pl-8 list-decimal"
+                        {...props}
+                      >
+                        {children}
+                      </ol>
+                    ),
+                    li: ({node, children, ...props}) => (
+                      <li
+                        className="text-[21px] leading-[32px] text-gray-800 dark:text-gray-200 mb-3"
+                        {...props}
+                      >
+                        {children}
+                      </li>
+                    ),
+                    hr: ({node, ...props}) => (
+                      <div className="my-10 text-center">
+                        <span className="inline-block text-gray-400 text-2xl tracking-widest">• • •</span>
+                      </div>
+                    ),
+                    code: ({node, inline, children, ...props}) =>
+                      inline ? (
+                        <code
+                          className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-[18px] font-mono text-red-600 dark:text-red-400"
+                          {...props}
+                        >
+                          {children}
+                        </code>
+                      ) : (
+                        <code
+                          className="block bg-gray-100 dark:bg-gray-800 p-6 rounded my-8 text-[16px] font-mono overflow-x-auto"
+                          {...props}
+                        >
+                          {children}
+                        </code>
+                      )
+                  }}
+                >
+                  {news.content}
+                </ReactMarkdown>
+              </div>
             </div>
 
             {/* Tags */}
-            <div className="mt-12 pt-8 border-t-2 border-gray-200 dark:border-gray-800">
+            <div className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 p-6 mb-8">
+              <h3 className="text-sm font-bold text-gray-500 dark:text-gray-400 mb-3">
+                {isZh ? '相关标签' : 'Related Tags'}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {news.keywords.map((keyword: string) => (
                   <span
                     key={keyword}
-                    className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm"
+                    className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                   >
                     #{keyword}
                   </span>
@@ -223,18 +339,21 @@ export default async function NewsDetailPage({ params }: NewsPageProps) {
               </div>
             </div>
 
-            {/* Back Link */}
-            <div className="mt-8">
+            {/* Navigation */}
+            <div className="flex justify-center mb-12">
               <LocaleLink
                 href="/news"
-                className="inline-block px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-black dark:bg-white text-white dark:text-black font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors border-2 border-black dark:border-white"
               >
-                {isZh ? '查看更多新闻' : 'View More News'}
+                ← {isZh ? '返回新闻列表' : 'Back to News List'}
               </LocaleLink>
             </div>
           </article>
         </div>
       </div>
+
+      {/* Training CTA Section */}
+      <InterviewCTA />
     </div>
   );
 }
