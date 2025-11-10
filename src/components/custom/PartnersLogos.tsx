@@ -63,12 +63,13 @@ export default function PartnersLogos() {
             {doubledLogos.map((logo, index) => (
               <div
                 key={`${logo.id}-${index}`}
-                className="flex-shrink-0 w-40 h-20"
+                className="flex-shrink-0 w-40 h-20 flex items-center justify-center"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
+                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
                 />
               </div>
             ))}
