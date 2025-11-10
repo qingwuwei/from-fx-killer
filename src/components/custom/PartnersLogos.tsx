@@ -5,15 +5,16 @@ import { motion } from 'motion/react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const logos = [
-  { id: 1, src: '/logos/2.png', alt: 'Partner 2' },
-  { id: 2, src: '/logos/3.png', alt: 'Partner 3' },
-  { id: 3, src: '/logos/4.svg', alt: 'Partner 4' },
-  { id: 4, src: '/logos/5.png', alt: 'Partner 5' },
-  { id: 5, src: '/logos/6.png', alt: 'Partner 6' },
-  { id: 6, src: '/logos/7.png', alt: 'Partner 7' },
-  { id: 7, src: '/logos/8.png', alt: 'Partner 8' },
-  { id: 8, src: '/logos/9.svg', alt: 'Partner 9' },
-  { id: 9, src: '/logos/10.svg', alt: 'Partner 10' },
+  { id: 1, src: '/logos/1.png', alt: 'Partner 1' },
+  { id: 2, src: '/logos/2.png', alt: 'Partner 2' },
+  { id: 3, src: '/logos/3.png', alt: 'Partner 3' },
+  { id: 4, src: '/logos/4.png', alt: 'Partner 4' },
+  { id: 5, src: '/logos/5.png', alt: 'Partner 5' },
+  { id: 6, src: '/logos/6.png', alt: 'Partner 6' },
+  { id: 7, src: '/logos/7.png', alt: 'Partner 7' },
+  { id: 8, src: '/logos/8.png', alt: 'Partner 8' },
+  { id: 9, src: '/logos/9.png', alt: 'Partner 9' },
+  { id: 10, src: '/logos/10.png', alt: 'Partner 10' },
 ];
 
 export default function PartnersLogos() {
