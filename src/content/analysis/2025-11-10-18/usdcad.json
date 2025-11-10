@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-10T18:41:47.853Z",
+  "price": {
+    "close": "1.40147",
+    "high": "1.40201",
+    "low": "1.40110",
+    "open": "1.40166",
+    "change": "-0.01",
+    "datetime": "2025-11-11 05:00:00"
+  },
+  "indicators": {
+    "rsi": 36.31762,
+    "macd": -0.0013613539,
+    "macd_signal": -0.0016764947,
+    "sma20": 1.40223
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[震荡整理趋势]",
+      "content": "当前美元/加元的价格为1.40147，呈现出震荡整理的趋势。价格在过去24小时内变化不大，显示出市场参与者对当前价位的谨慎态度。随着价格在1.40110至1.40201区间内波动，短期内可能会继续在此区间内整理，未出现明显的方向性突破。\n\n从技术指标来看，MACD当前处于负值区域，表明短期内卖压仍然存在。虽然RSI值尚未提供，但如果RSI进入超卖或超买区间，可能会为后续价格走势提供重要信号。目前20日简单移动平均线(SMA)在1.40223，作为短期阻力位，价格可能在此水平受到压制。\n\n支撑位方面，1.40110是关键水平，若价格跌破该支撑位，可能会引发更大的下探空间。相反，若突破1.40223，则可能会引发多头的回升行情。交易者应关注这两个关键水平，并适时调整仓位策略，以应对市场波动。\n\n综合考虑，建议短线交易者在当前价位附近采取观望态度，待价格突破支撑或阻力位后再进行交易。同时，保持警惕，随时关注市场消息和技术指标的变化，以便及时调整策略。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The USD/CAD pair is currently showing a subtle bearish sentiment, with the latest price at 1.40147 reflecting a minor 24-hour change of -0.01%. This indicates a consolidation phase after the pair reached a high of 1.40201 and a low of 1.40110 within the last day. The inability to hold above the SMA(20) at 1.40223 suggests that sellers are gaining a slight upper hand, leading to cautious trading in the near term.\n\nIn terms of indicators, the MACD reading of -0.0013613539 indicates a potential bearish momentum, although the lack of a signal line complicates a straightforward interpretation. Traders should monitor the RSI(14) once available, as it can provide insights into whether the pair is overbought or oversold. A low RSI might suggest a reversal opportunity, while a high RSI could confirm the bearish trend.\n\nKey support levels to watch lie at 1.40110 and 1.40000, both of which could serve as critical points for buyers to enter the market. Conversely, resistance is evident around 1.40223, near the SMA(20), and the psychological level of 1.40500. A breakout above this resistance could signal a bullish reversal, whereas a drop below support may lead to further losses.\n\nTraders might consider a conservative approach by waiting for confirmation of a trend direction before entering positions. A break below 1.40110 may provide a short-selling opportunity, while a sustained move above 1.40223 could warrant bullish trades. Additionally, employing a risk management strategy with stop-loss orders will be essential, given the current market volatility."
+    }
+  }
+}

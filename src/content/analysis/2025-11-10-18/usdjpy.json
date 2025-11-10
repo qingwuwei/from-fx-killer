@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-10T18:40:20.543Z",
+  "price": {
+    "close": "153.99899",
+    "high": "154.011002",
+    "low": "153.91800",
+    "open": "153.95500",
+    "change": "0.03",
+    "datetime": "2025-11-11 05:00:00"
+  },
+  "indicators": {
+    "rsi": 58.39276,
+    "macd": 0.13879321,
+    "macd_signal": 0.16780452,
+    "sma20": 153.9781
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理趋势]",
+      "content": "当前美元/日元（USD/JPY）在153.99附近震荡整理，展现出短期内的横盘特征。近期价格触及154.01的高点，但未能有效突破，显示出市场在这一水平附近存在一定的卖压。整体来看，若价格持续维持在153.90至154.00区间内，则可能继续出现震荡走势。\n\n从技术指标来看，MACD显示出轻微的上涨动能，但缺乏强烈的趋势确认。由于RSI数据缺失，我们无法准确评估市场是否超买或超卖。不过，20日简单移动平均线（SMA）位于153.98，可能为短期内的支撑位，若价格跌破此水平，可能引发进一步回调。\n\n在支撑和阻力方面，153.90为重要的支撑位，若下破则可能加速回调至153.50区域。阻力位则在154.00至154.10区间，突破这一水平可能引发进一步上涨。因此，投资者可考虑在支撑位附近寻找买入机会，而在阻力位处设置止盈点。\n\n建议短线交易者关注市场动向，适时调整策略。若价格突破154.10，可考虑做多；若跌破153.90，则需谨慎应对可能的回调风险。保持良好的风险管理，确保交易的安全性和有效性。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair currently trades at 153.99899, showing a slight upward movement of 0.03% over the past 24 hours. The recent price action indicates a consolidation phase, with the pair oscillating between a high of 154.011002 and a low of 153.91800. This narrow range suggests indecision in the market, and traders should closely monitor the price for potential breakout opportunities. A sustained close above 154.00 could signal bullish momentum, while a drop below 153.90 may indicate a bearish reversal.\n\nFrom a technical standpoint, the Simple Moving Average (SMA) of 20 periods at 153.97810 provides a crucial reference point. The price is currently trading slightly above this level, suggesting a bullish bias. However, without a significant increase in volume or momentum, this upward trend may lack the strength needed for a breakout. The MACD value of 0.13879321 indicates a potential for upward movement, but the absence of a signal line makes it essential to wait for further confirmation before taking positions.\n\nKey support and resistance levels are evident in the recent price action. The immediate support level is found around 153.90, where buying interest may emerge, while resistance at 154.00 could act as a hurdle for bulls. A breach of these levels would provide clearer signals for traders. If the price can hold above 154.00, it may target the next resistance around 154.30, while a fall below 153.90 could lead to a test of deeper support near 153.70.\n\nIn terms of trading strategy, traders may consider a buy position if the price holds above 154.00, targeting short-term gains around 154.30. Conversely, a sell signal could be triggered if the price breaks below 153.90, with potential targets near 153.70. Risk management will be crucial in this environment, with stop-loss orders placed strategically to minimize potential losses in case of unforeseen market movements."
+    }
+  }
+}
