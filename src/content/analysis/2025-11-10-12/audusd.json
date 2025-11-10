@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-10T13:00:11.213Z",
+  "price": {
+    "close": "0.65346664",
+    "high": "0.65393674",
+    "low": "0.65321052",
+    "open": "0.65363753",
+    "change": "-0.03",
+    "datetime": "2025-11-10 23:00:00"
+  },
+  "indicators": {
+    "rsi": 68.029207,
+    "macd": 0.0012377562,
+    "macd_signal": 0.0010583255,
+    "sma20": 0.65138955
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理趋势]",
+      "content": "目前，澳元/美元在0.6534附近震荡整理，短期内缺乏明确的趋势方向。价格在高点0.6539和低点0.6532之间波动，显示出市场参与者对未来走势的谨慎态度。这种横盘整理可能会导致后续价格突破的机会，但需关注市场情绪和基本面变化。\n\n技术指标方面，虽然当前未提供RSI值，但从MACD来看，0.0012的值显示出价格动能较弱，市场可能维持在现有区间内。在20日简单移动平均线(SMA)为0.6514的支撑下，价格有一定的防守力度，若进一步下探，可能会测试这一支撑位。\n\n支撑位在0.6514附近，而阻力位则在0.6539。若价格突破0.6539，可能引发短期上涨行情；反之，若跌破0.6514，则可能开启进一步下行空间。建议交易者关注这两个关键价位的突破，结合其他技术指标进行决策。\n\n总体来看，当前震荡整理的状态使得短期内交易机会有限，建议保持谨慎，适时观望，等待更为明确的趋势信号再行操作。同时，注意全球经济和政策变化对市场的潜在影响。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair is currently trading at 0.65346664, reflecting a slight decline of 0.03% over the last 24 hours. The price action suggests a consolidation phase, oscillating between the recent high of 0.65393674 and a low of 0.65321052. This range-bound movement indicates indecision among traders, as the market awaits further directional cues. A breakout above the resistance level at 0.6540 may signal a bullish sentiment, while a drop below the support at 0.6530 could reinforce bearish pressures.\n\nIn terms of technical indicators, the absence of a clear RSI reading limits our ability to gauge overbought or oversold conditions. However, the MACD value of 0.0012377562 hints at a potential bullish momentum if the signal line were available for comparison. The 20-period Simple Moving Average (SMA) stands at 0.65138955, providing a short-term support level. A close above this SMA may support upward movement, while a breach could prompt further downside.\n\nTraders should closely monitor price action near the established support and resistance zones. If the price breaks decisively above 0.6540, a potential target could be the next resistance at 0.6560. Conversely, if the price falls below 0.6530, it may be prudent to consider short positions, targeting a move down to around 0.6500. Staying alert to external market factors, such as economic data releases or geopolitical developments, will also be crucial in shaping future price dynamics.\n\nIn summary, the AUD/USD pair remains in a cautious trading range, with key levels established for potential trades. Traders should employ a watchful approach, utilizing stop-loss orders to manage risk effectively. As the technical indicators develop, clearer opportunities may emerge, guiding participants in making informed decisions in this pair."
+    }
+  }
+}

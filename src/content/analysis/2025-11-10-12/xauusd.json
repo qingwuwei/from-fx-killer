@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-10T13:03:17.056Z",
+  "price": {
+    "close": "4096.82",
+    "high": "4096.99",
+    "low": "4095.25",
+    "open": "4095.25",
+    "change": "0.04",
+    "datetime": "2025-11-11 00:00:00"
+  },
+  "indicators": {
+    "rsi": 84.98405,
+    "macd": 24.56994,
+    "macd_signal": 19.90164,
+    "sma20": 4043.1845
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，关注突破信号]",
+      "content": "当前黄金/美元(XAU/USD)的价格在4096.82附近运行，整体趋势呈现出震荡整理的态势。尽管24小时的变化仅为0.04%，但高点4096.99和低点4095.25的窄幅波动显示出市场缺乏明显的方向性。投资者需要关注即将出现的突破信号，以便把握潜在的交易机会。\n\n从技术指标来看，MACD显示出24.56994的值，暗示短期内可能存在一定的上行动能，但需要结合其他指标进行综合分析。由于RSI(14)数据缺失，暂时无法判断超买或超卖的情况。20日简单移动平均线(SMA)在4043.18的位置提供了重要的支撑位，若价格向下回调至此水平，可能会吸引买盘介入。\n\n在支撑和阻力方面，当前支撑位在4043.18，而阻力位则在4100附近。若价格突破4100，则可能进一步上涨至4150的心理关口。反之，若跌破4043.18，则需警惕更深的回调风险，目标可能落在4000附近。\n\n建议投资者在当前震荡区间内保持谨慎，关注价格的关键支撑和阻力位。可以考虑在价格接近支撑位时逢低买入，在突破阻力位时追涨，但需设定合理的止损以控制风险。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) stands at 4096.82, reflecting a slight upward change of 0.04% over the past 24 hours. This modest movement suggests a consolidation phase in the market. The recent high of 4096.99 and a low of 4095.25 indicate a narrow trading range, implying that market participants are currently indecisive. If this pattern continues, a breakout may be imminent, warranting close monitoring of price action for potential trading opportunities.\n\nIn analyzing the technical indicators, the absence of an RSI reading limits our ability to assess overbought or oversold conditions. However, the MACD value of 24.56994 indicates bullish momentum, suggesting that buyers are currently in control. The SMA(20) at 4043.18450 serves as a key reference point, highlighting that the price is well above this moving average, reinforcing the bullish sentiment in the short term. Traders should watch for potential pullbacks toward this SMA, which could act as a support level.\n\nAs for support and resistance levels, the immediate support is seen around 4095.25, while resistance may be encountered near the recent high of 4096.99. A break above this resistance could signal a stronger bullish trend, potentially targeting new highs. Conversely, if the price falls below 4095.25, it could lead to a test of the SMA(20) at 4043.18450. This would be a critical level to watch, as a breach could shift the market sentiment from bullish to bearish.\n\nFor trading strategies, a cautious approach is advisable given the current consolidation phase. Traders may consider entering long positions on a confirmed breakout above 4096.99, with a stop-loss just below 4095.25 to manage risk. Alternatively, if the price retraces toward the SMA(20), it may present a buying opportunity, provided there are signs of support holding. Active monitoring of market conditions and news events will be essential in navigating this environment effectively."
+    }
+  }
+}
