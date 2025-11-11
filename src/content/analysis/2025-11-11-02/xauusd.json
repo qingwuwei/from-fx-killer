@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T02:10:37.032Z",
+  "price": {
+    "close": "4129.5",
+    "high": "4131",
+    "low": "4124.74",
+    "open": "4128.43",
+    "change": "0.03",
+    "datetime": "2025-11-11 13:00:00"
+  },
+  "indicators": {
+    "rsi": 78.76328,
+    "macd": 23.25013,
+    "macd_signal": 22.42194,
+    "sma20": 4096.5185
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，谨慎操作]",
+      "content": "当前黄金/美元(XAU/USD)价格在4129.5附近波动，显示出短期内的震荡整理特征。从高点4131和低点4124.74来看，市场缺乏明确的方向，表明投资者情绪谨慎。在这种情况下，建议投资者密切关注价格在这些区间内的突破情况，以判断后续走势。\n\n技术指标方面，虽然RSI未提供，但MACD目前为23.25013，显示出一定的上涨动能。然而，未能确认信号线的情况，可能暗示短期内价格波动不大。结合20日简单移动平均线(SMA)在4096.5185的位置，价格在其上方运行，显示出一定的支撑力度。\n\n在支撑和阻力位方面，4124.74将成为关键支撑位，而4131则是重要阻力位。若价格突破4131，可能会吸引更多买盘，推动价格上行。而若跌破4124.74，则需警惕进一步下探的风险。交易策略上，建议在这两个关键价位附近设置止损，关注突破信号，以便在合适的时机进场或离场。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4129.5 reflects a slight upward momentum, evidenced by a minimal 24-hour change of 0.03%. This stability suggests a consolidation phase following recent fluctuations. Observing the high of 4131 and a low of 4124.74 indicates a relatively narrow trading range, which may point to a market awaiting further directional clarity. Traders should monitor for potential breakout points, as these levels are pivotal for determining future price action.\n\nIn terms of technical indicators, the absence of a current RSI reading limits our understanding of market overbought or oversold conditions. However, the MACD value of 23.25013 suggests bullish momentum, which can serve as a positive signal for traders. The SMA(20) at 4096.5185 further supports the bullish narrative, indicating that the price is trading above the short-term average, reinforcing the potential for upward movement in the near term.\n\nKey support levels are identified at 4124.74, the recent low, and further down at the SMA(20) of 4096.5185. Resistance can be gauged at the high of 4131, with further psychological resistance anticipated around 4140. A breach above this level could open the door for more aggressive buying, while a drop below 4124.74 may trigger a reevaluation of bullish positions.\n\nTraders might consider entering long positions if XAU/USD breaks above 4131 with strong volume, targeting the next resistance at 4140. Conversely, a close below 4124.74 could prompt a short-term sell strategy, focusing on a retracement back toward the SMA(20) at 4096.5185. Maintaining a disciplined approach with stop-loss orders around these key levels will also help manage risk effectively."
+    }
+  }
+}

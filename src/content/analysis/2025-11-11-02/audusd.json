@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-11T02:07:42.077Z",
+  "price": {
+    "close": "0.65316784",
+    "high": "0.65329587",
+    "low": "0.65308255",
+    "open": "0.65329587",
+    "change": "-0.02",
+    "datetime": "2025-11-11 13:00:00"
+  },
+  "indicators": {
+    "rsi": 55.0080113,
+    "macd": 0.0006291022,
+    "macd_signal": 0.00081135562,
+    "sma20": 0.65341589
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "目前，澳元/美元在0.6530附近震荡整理，缺乏明确的趋势指引。从最新价格来看，AUD/USD略微下跌0.02%，显示出市场情绪的谨慎。短期内，价格未能有效突破20日简单移动平均线（SMA 20）0.6534的阻力位，表明上行动能不足。\n\n技术指标方面，MACD值为0.00062910220，暗示市场动能微弱，而RSI指标尚未提供，可能需要关注其后续走势。当前市场的波动幅度较小，交易者应对短期内的反弹和回调保持警惕，避免过度追高或追低。\n\n在支撑与阻力方面，0.6531是当前的支撑位，如果价格跌破该水平，可能会引发进一步回调，而0.6534则为主要的阻力位，突破后可能会打开更大的上涨空间。交易者可考虑在支撑位附近布局多单，或在阻力位附近设置止损以控制风险。\n\n总体来看，AUD/USD仍处于震荡区间，建议投资者保持观望，等待更明确的买入或卖出信号。在此期间，密切关注全球经济数据及风险情绪的变化，以便及时调整交易策略。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The Australian Dollar has experienced a slight decline against the US Dollar, currently trading at 0.6532. This modest change of -0.02% over the past 24 hours suggests a consolidation phase following recent volatility. The high of 0.6533 and low of 0.6531 indicate a relatively tight trading range, reflecting cautious sentiment among traders. As the market navigates this narrow band, it is essential to monitor for any breakout potential, which could define the next directional move.\n\nTechnical indicators provide further insight into the current market dynamics. The absence of a complete RSI reading limits our ability to assess overbought or oversold conditions. However, the MACD value of 0.00063 suggests a potential bullish momentum, albeit weak. The 20-period Simple Moving Average (SMA) at 0.6534 also serves as a critical resistance level, which the price has failed to breach recently. Should the market push above this SMA, it may attract bullish traders looking for a continuation pattern.\n\nIn terms of support and resistance levels, the immediate support can be observed around 0.6531, where the price found a floor over the last day. A breach below this level could open the door to further declines, potentially targeting the next support at around 0.6520. Conversely, if the price manages to overcome the SMA resistance at 0.6534, it could lead to a rally towards 0.6540, indicating a positive shift in market sentiment.\n\nFor traders considering positions in AUD/USD, a cautious approach is warranted. A buy signal may emerge upon a confirmed breakout above the 20-period SMA, coupled with supportive volume. Conversely, a close below 0.6531 could suggest a bearish trend, prompting consideration of short positions. Monitoring broader economic indicators and geopolitical developments will also be crucial for informed trading decisions in this pair."
+    }
+  }
+}

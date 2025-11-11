@@ -1,0 +1,30 @@
+{
+  "symbol": "EUR/USD",
+  "name": "Euro vs US Dollar",
+  "nameCn": "欧元/美元",
+  "timestamp": "2025-11-11T02:05:38.920Z",
+  "price": {
+    "close": "1.15558",
+    "high": "1.15561",
+    "low": "1.15541",
+    "open": "1.15546",
+    "change": "0.01",
+    "datetime": "2025-11-11 13:00:00"
+  },
+  "indicators": {
+    "rsi": 48.43367,
+    "macd": -0.000050787529,
+    "macd_signal": 0.000052328677,
+    "sma20": 1.15604
+  },
+  "analysis": {
+    "zh": {
+      "title": "欧元/美元技术分析：[震荡整理中]",
+      "content": "当前欧元/美元的价格为1.15558，显示出短期内震荡整理的趋势。价格在1.15541至1.15561之间波动，未能突破明显的支撑或阻力位。市场情绪较为谨慎，投资者在等待更明确的方向指引。\n\n从技术指标来看，虽然RSI(14)数据缺失，但可以通过MACD的数值观察到当前市场处于弱势状态，MACD值为-0.000050787529，显示出卖方的优势。SMA(20)位于1.15604，表明短期均线略高于当前价格，可能会对价格施加一定的阻力。\n\n在支撑与阻力方面，近期低点1.15541可视为关键支撑位，而1.15604的SMA则可能形成阻力。若价格突破1.15604，可能引发进一步的上涨；反之，若跌破1.15541，则可能加速回调。\n\n建议交易者在当前区间内采取区间交易策略，关注价格在支撑和阻力位的表现。若出现突破信号，可适时调整仓位，寻求更高的利润机会。同时，注意市场消息及经济数据公布，可能对价格波动产生影响。"
+    },
+    "en": {
+      "title": "Euro vs US Dollar Technical Analysis",
+      "content": "The EUR/USD pair is currently trading at 1.15558, showing a slight 24-hour change of 0.01%. The price has oscillated within a narrow range, reaching a high of 1.15561 and a low of 1.15541. This tight trading range may suggest a period of consolidation, as market participants seem hesitant to commit to a clear direction. Observing the recent price action, the overall trend appears neutral, indicating that traders should remain cautious while waiting for a breakout.\n\nThe current SMA(20) level at 1.15604 serves as an important reference point. A price move above this level may indicate potential bullish momentum, while a failure to hold above it could reinforce bearish sentiment. The MACD value of -0.0000507 suggests a weak bearish pressure, but without a corresponding signal line, it’s essential to monitor for a possible cross that could indicate a change in momentum. Traders should also keep an eye on the RSI for overbought or oversold conditions, which could provide further context.\n\nIn terms of key support and resistance levels, the immediate support can be observed around the low of 1.15541, while resistance is positioned at the recent high of 1.15561. A break below the support may trigger further selling pressure, pushing the pair toward lower levels, while a breakout above resistance could lead to a test of higher targets. Traders should consider entering long positions if a sustained move above 1.15604 occurs, while short positions could be warranted on a decisive break below 1.15541.\n\nOverall, the EUR/USD market is at a critical juncture, and traders are advised to remain vigilant. With the current indicators suggesting indecision, it may be prudent to adopt a wait-and-see approach until a clearer trend emerges. Monitoring key levels and indicator signals will be essential in making informed trading decisions in the coming sessions."
+    }
+  }
+}
