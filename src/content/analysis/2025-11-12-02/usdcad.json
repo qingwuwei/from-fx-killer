@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-12T02:54:41.717Z",
+  "price": {
+    "close": "1.40172",
+    "high": "1.40194",
+    "low": "1.40090",
+    "open": "1.40177",
+    "change": "-0.00",
+    "datetime": "2025-11-12 13:00:00"
+  },
+  "indicators": {
+    "rsi": 48.13168,
+    "macd": -0.00031685354,
+    "macd_signal": -0.00045500765,
+    "sma20": 1.40168
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[震荡整理中]",
+      "content": "当前美元/加元（USD/CAD）价格为1.40172，整体呈现震荡整理的态势。过去24小时内价格波动不大，最高触及1.40194，最低为1.40090。市场缺乏明确的方向，投资者需关注即将发布的经济数据和消息面变化，以判断未来走势。\n\n从技术指标来看，虽然RSI和MACD数据尚缺失，但20日简单移动平均线（SMA）位于1.40168，显示出短期内价格可能受到支撑。若价格突破此水平，可能会引发进一步的买入信号。而如果价格持续维持在此区间内，则可能会加剧市场的震荡行情。\n\n在支撑和阻力位方面，1.40090构成短期支撑位，若跌破该水平，可能会测试更低的支撑区域。相反，1.40200-1.40300区域则是重要的阻力位，突破后有望推高价格。投资者应密切关注这些关键水平，以制定相应的交易策略。\n\n建议交易者在当前区间内采取谨慎态度，避免过度交易。可以考虑在接近支撑位时寻找买入机会，而在接近阻力位时则考虑卖出或止盈。同时，建议密切关注市场情绪和经济数据发布，以便及时调整交易策略。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The USD/CAD pair is currently trading at 1.40172, exhibiting a narrow range over the last 24 hours with minimal price movement. This stability suggests a consolidation phase following recent fluctuations. The high and low for the day, 1.40194 and 1.40090 respectively, indicate tight price action, reflecting market indecision. Traders should remain attentive to broader economic developments that could influence the pair, particularly shifts in oil prices, as Canada is a significant oil exporter.\n\nThe SMA(20) at 1.40168 acts as a dynamic support level, reinforcing a potential bullish outlook if the price maintains above this average. The slight negative MACD value suggests a weak bearish momentum; however, without a clear signal from the RSI or other momentum indicators, the market remains in a neutral stance. Traders should monitor for any shifts in momentum that could lead to a breakout or breakdown from the current price level.\n\nIn terms of support and resistance, immediate support is observed around the 1.40090 level, while resistance can be identified at 1.40200. A sustained move above 1.40200 could open the door for a rally towards 1.40500, while failure to hold above the current support could trigger a deeper correction towards 1.39800. \n\nGiven the current market conditions, a cautious trading approach is advised. Traders might consider entering long positions if the price breaks above 1.40200, with a target near 1.40500. Conversely, short positions may be warranted if the price dips below 1.40090, targeting 1.39800. Keeping a watchful eye on fundamental factors and potential volatility will be crucial in navigating this pair effectively."
+    }
+  }
+}

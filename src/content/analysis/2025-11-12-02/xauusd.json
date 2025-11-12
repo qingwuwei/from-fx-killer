@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-12T02:56:43.372Z",
+  "price": {
+    "close": "4120.5162",
+    "high": "4135.42176",
+    "low": "4119.38849",
+    "open": "4131.29936",
+    "change": "-0.26",
+    "datetime": "2025-11-12 13:00:00"
+  },
+  "indicators": {
+    "rsi": 50.41063,
+    "macd": 6.94186,
+    "macd_signal": 8.78528,
+    "sma20": 4127.2414
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，谨防反弹]",
+      "content": "当前黄金/美元(XAU/USD)的走势呈现出震荡整理的状态。最新价格4120.5162，相较于24小时变化的-0.26%，显示出市场的谨慎情绪。价格在4135.42的高点和4119.39的低点之间波动，表明短期内缺乏明确的方向。\n\n从技术指标来看，MACD值为6.94186，显示出短期内多头仍占据主导，但信号线缺失使得该指标的解读有所局限。此外，20日简单移动平均线(SMA)在4127.24140附近，可能对价格形成一定支撑，若能够维持在此水平之上，短期内有望迎来反弹。\n\n支撑位方面，4119.39是关键支撑，若跌破此位，可能会引发更大幅度的调整。阻力位则在4135.42附近，若突破该水平，可能会引发进一步的买盘。在交易策略上，建议短线交易者关注突破信号，结合市场情绪，适度参与，保持风险控制。\n\n总体而言，当前的市场环境要求交易者保持谨慎，密切关注技术指标变化，合理设置止损和止盈，以应对可能的市场波动。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) is trading at 4120.5162, reflecting a slight decline of 0.26% over the past 24 hours. This minor pullback indicates a consolidation phase after reaching a high of 4135.42176. The overall trend appears to be neutral to slightly bearish, suggesting that traders should remain cautious and look for clearer signals before making significant moves. A decisive break below the recent low of 4119.38849 could indicate further downside potential.\n\nIn terms of technical indicators, the MACD shows a value of 6.94186, signaling potential bullish momentum; however, without the signal line data, it is difficult to determine a clear trend. The absence of an RSI reading limits our ability to gauge overbought or oversold conditions, making it essential to monitor price action closely. The SMA(20) at 4127.24140 serves as a dynamic resistance level. A break above this moving average could signal a shift in momentum, encouraging buyers to re-enter the market.\n\nSupport levels are identified around 4119.38849, where buyers may step in to prevent further declines. Should this level hold, traders might consider entering long positions, especially if bullish reversal patterns emerge. Conversely, if the price breaks below this level, it could trigger selling pressure, with potential targets at lower support areas. Therefore, maintaining a balanced approach to risk management is crucial in this environment.\n\nFor trading strategies, consider a range-bound approach in the absence of strong directional signals. Traders could look for opportunities to buy near support and sell near resistance, using tight stop-loss orders to manage risk. Additionally, keeping an eye on broader economic indicators and market sentiment will be essential in navigating XAU/USD effectively, as external factors may impact gold prices significantly."
+    }
+  }
+}
