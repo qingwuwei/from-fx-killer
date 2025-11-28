@@ -7,7 +7,6 @@ import SplanFooter from "@/components/splan/SplanFooter";
 import SubscriptionNotification from "@/components/custom/SubscriptionNotification";
 import FloatingContactForm from "@/components/custom/FloatingContactForm";
 import WelcomeModalWrapper from "@/components/custom/WelcomeModalWrapper";
-import CalendlyWidget from "@/components/custom/CalendlyWidget";
 import StructuredData from "@/components/seo/StructuredData";
 import Providers from "@/components/providers/Providers";
 import MouseFollower from "@/components/effects/MouseFollower";
@@ -26,13 +25,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://fxkiller.com'),
   title: {
-    default: "FX Killer - Professional FX Trader Training Platform | 汇刃·外汇交易职业交易员培训",
-    template: "%s | FX Killer"
+    default: "Yongxianli - Professional FX Trader Training Platform | 涌现力·外汇交易职业交易员培训",
+    template: "%s | Yongxianli"
   },
-  description: "FX Killer (汇刃) - 专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。培养真正适合外汇市场的专业交易员。",
+  description: "Yongxianli (涌现力) - 专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。培养真正适合外汇市场的专业交易员。",
   keywords: [
-    "FX Killer",
-    "汇刃",
+    "Yongxianli",
+    "涌现力",
     "外汇交易",
     "外汇培训",
     "职业交易员",
@@ -55,9 +54,9 @@ export const metadata: Metadata = {
     "资金管理",
     "技术分析",
   ],
-  authors: [{ name: "FX Killer Team" }],
-  creator: "FX Killer",
-  publisher: "FX Killer",
+  authors: [{ name: "Yongxianli Team" }],
+  creator: "Yongxianli",
+  publisher: "Yongxianli",
   formatDetection: {
     email: false,
     address: false,
@@ -75,24 +74,24 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     alternateLocale: ["en_US"],
     url: "https://fxkiller.com",
-    siteName: "FX Killer | 汇刃",
-    title: "FX Killer - Professional FX Trader Training Platform | 汇刃·职业交易员培训",
+    siteName: "Yongxianli | 涌现力",
+    title: "Yongxianli - Professional FX Trader Training Platform | 涌现力·职业交易员培训",
     description: "专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "FX Killer - Professional FX Trader Training Platform",
+        alt: "Yongxianli - Professional FX Trader Training Platform",
         type: "image/jpeg",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@fxkiller",
-    creator: "@fxkiller",
-    title: "FX Killer - Professional FX Trader Training Platform",
+    site: "@yongxianli42",
+    creator: "@yongxianli42",
+    title: "Yongxianli - Professional FX Trader Training Platform",
     description: "专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。",
     images: ["/og-image.jpg"],
   },
@@ -170,7 +169,6 @@ export default async function PortalLayout({
           <BackToTop />
           <FloatingContactForm />
           <WelcomeModalWrapper />
-          <CalendlyWidget />
           <SubscriptionNotification />
           <Analytics />
           <SpeedInsights />
