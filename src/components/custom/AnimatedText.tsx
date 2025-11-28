@@ -163,51 +163,19 @@ export default function AnimatedText({ className = "", loop = true, delay = 0 }:
           </div>
         </div>
 
-        {/* FxKiller */}
+        {/* Yongxianli */}
         <div className="flex items-center gap-1">
-          {/* F */}
+          {/* Y - 简单动画 */}
           <motion.span
             variants={letterVariants}
             className="text-6xl font-bold"
             style={{ color: textColor, fontFamily: "Inter, sans-serif" }}
           >
-            F
+            Y
           </motion.span>
 
-          {/* x - 特殊的斜线动画 */}
-          <div className="relative inline-block" style={{ width: "0.8em", height: "0.8em", fontSize: "3.75rem" }}>
-            {/* 左上到右下的斜线 */}
-            <motion.div
-              variants={xLineVariants}
-              className="absolute"
-              style={{
-                width: "100%",
-                height: "4px",
-                backgroundColor: textColor,
-                top: "50%",
-                left: "0",
-                transformOrigin: "left center",
-                rotate: "45deg",
-              }}
-            />
-            {/* 右上到左下的斜线 */}
-            <motion.div
-              variants={xLineVariants}
-              className="absolute"
-              style={{
-                width: "100%",
-                height: "4px",
-                backgroundColor: textColor,
-                top: "50%",
-                left: "0",
-                transformOrigin: "left center",
-                rotate: "-45deg",
-              }}
-            />
-          </div>
-
-          {/* Killer - 逐字出现 */}
-          {["K", "i", "l", "l", "e", "r"].map((letter, index) => (
+          {/* ongxianli - 逐字出现 */}
+          {["o", "n", "g", "x", "i", "a", "n", "l", "i"].map((letter, index) => (
             <motion.span
               key={index}
               variants={letterVariants}

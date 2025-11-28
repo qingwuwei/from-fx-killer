@@ -19,7 +19,7 @@ const translations: Record<Language, Record<string, string>> = {
   zh: {
     // 品牌名
     'brand.name': '涌现力',
-    'brand.full': 'FX Killer',
+    'brand.full': 'Yongxianli',
 
     // 导航栏
     'nav.home': '首页',
@@ -165,7 +165,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.focus': '专注外汇交易培训',
     'footer.contact.cultivate': '培养职业外汇交易员',
     'footer.contact.apply': '立即申请',
-    'footer.copyright': '© 涌现力 · 专业外汇交易员培训平台 · fxkiller.com',
+    'footer.copyright': '© 涌现力 · 专业外汇交易员培训平台 · yongxianli.com',
     'footer.disclaimer': ' 外汇交易有风险，投资需谨慎 · 本站内容仅供学习参考，不构成投资建议',
     'footer.partners.title': '合作伙伴',
     'footer.partners.brokers': '合作经纪商',
@@ -291,7 +291,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.hero.desc': '开启职业交易之路前，先读懂这些问题',
     'faq.search.placeholder': '搜索问题...',
     'faq.search.button': '搜索',
-    'faq.category.course': '关于 FX Killer',
+    'faq.category.course': '关于涌现力',
     'faq.category.learning': '关于培训',
     'faq.category.pricing': '关于收入与分润',
     'faq.category.support': '交易铁律',
@@ -434,7 +434,7 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.tab.tianti': '天梯',
     'dashboard.tab.config': '策略配置',
     'dashboard.footer.warning': ' 仅用于测试环境。实盘交易需要充分测试和风险评估。',
-    'dashboard.footer.copyright': '2024-2025 © FX Killer 专业外汇交易员培训平台',
+    'dashboard.footer.copyright': '2024-2025 © 涌现力 专业外汇交易员培训平台',
 
     // Admin Login
     'login.title': '交易控制台',
@@ -493,13 +493,13 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': '返回博客',
     'blog.relatedPosts': '相关文章',
     'blog.cta.title': '准备开始您的交易之旅？',
-    'blog.cta.subtitle': '加入FX Killer，接受专业的交易员培训',
+    'blog.cta.subtitle': '加入涌现力，接受专业的交易员培训',
     'blog.cta.button': '立即加入',
   },
   en: {
     // Brand Name
-    'brand.name': 'FX Killer',
-    'brand.full': 'FX Killer',
+    'brand.name': 'Yongxianli',
+    'brand.full': 'Yongxianli',
 
     // Navigation
     'nav.home': 'Home',
@@ -520,7 +520,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta.dashboard': 'Enter Trading System',
 
     // Why Choose Section
-    'why.title': 'Why Choose FX Killer',
+    'why.title': 'Why Choose Yongxianli',
     'why.subtitle': 'Focused on selecting and cultivating elite forex traders, nurturing those truly suited, retaining the few, and advising the majority to pursue other paths',
 
     // Advantages
@@ -533,7 +533,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Comparison
     'comparison.vs': 'VS Traditional Forex Training',
-    'comparison.fxkiller': 'FX Killer',
+    'comparison.fxkiller': 'Yongxianli',
     'comparison.traditional': 'Traditional Training Institutions',
     'comparison.free': 'Completely Free - No Training Fees',
     'comparison.practical': 'Practical Training - 30 Days of Systematic Professional Training',
@@ -645,7 +645,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.focus': 'Focused on forex training',
     'footer.contact.cultivate': 'Cultivating professional forex traders',
     'footer.contact.apply': 'Apply Now',
-    'footer.copyright': '© FX Killer · Professional Forex Trader Training Platform · fxkiller.com',
+    'footer.copyright': '© Yongxianli · Professional Forex Trader Training Platform · yongxianli.com',
     'footer.disclaimer': ' Forex trading carries risk, investment requires caution · Site content for learning reference only, not investment advice',
     'footer.partners.title': 'Partners',
     'footer.partners.brokers': 'Partner Brokers',
@@ -657,7 +657,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
-    'joinus.hero.title1': 'FX Killer',
+    'joinus.hero.title1': 'Yongxianli',
     'joinus.hero.title2': 'Forex Trader Training',
     'joinus.hero.subtitle': 'Cultivating those truly suited, retaining the few, advising the majority to pursue other paths',
     'joinus.hero.stat1': 'Pass Rate',
@@ -771,7 +771,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.hero.desc': 'Understand these questions before starting your professional trading journey',
     'faq.search.placeholder': 'Search questions...',
     'faq.search.button': 'Search',
-    'faq.category.course': 'About FX Killer',
+    'faq.category.course': 'About Yongxianli',
     'faq.category.learning': 'About Training',
     'faq.category.pricing': 'About Income & Profit Share',
     'faq.category.support': 'Trading Iron Laws',
@@ -914,7 +914,7 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.tab.tianti': 'Leaderboard',
     'dashboard.tab.config': 'Strategy Config',
     'dashboard.footer.warning': ' For testing environment only. Live trading requires thorough testing and risk assessment.',
-    'dashboard.footer.copyright': '2024-2025 © FX Killer Professional Forex Trader Training Platform',
+    'dashboard.footer.copyright': '2024-2025 © Yongxianli Professional Forex Trader Training Platform',
 
     // Admin Login
     'login.title': 'Trading Dashboard',
@@ -973,7 +973,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': 'Back to Blog',
     'blog.relatedPosts': 'Related Posts',
     'blog.cta.title': 'Ready to Start Your Trading Journey?',
-    'blog.cta.subtitle': 'Join FX Killer for professional trader training',
+    'blog.cta.subtitle': 'Join Yongxianli for professional trader training',
     'blog.cta.button': 'Join Now',
   }
 };

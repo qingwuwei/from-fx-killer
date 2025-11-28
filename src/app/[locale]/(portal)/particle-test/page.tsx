@@ -84,14 +84,14 @@ export default function ParticleTestPage() {
           </div>
         </div>
 
-        {/* FxKiller 动画 */}
+        {/* Yongxianli 动画 */}
         <div className="mb-8">
           <h3 className="text-xl font-bold text-center mb-4 text-black dark:text-white">
-            FxKiller
+            Yongxianli
           </h3>
           <div className="w-full h-40 border-2 border-black dark:border-white bg-gray-50 dark:bg-gray-900">
             <ParticleText
-              text="FxKiller"
+              text="Yongxianli"
               fontSize={80}
               color="#000000"
               particleCount={3000}

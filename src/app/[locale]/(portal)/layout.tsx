@@ -23,7 +23,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://fxkiller.com'),
+  metadataBase: new URL('https://yongxianli.com'),
   title: {
     default: "Yongxianli - Professional FX Trader Training Platform | 涌现力·外汇交易职业交易员培训",
     template: "%s | Yongxianli"
@@ -63,17 +63,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://fxkiller.com",
+    canonical: "https://yongxianli.com",
     languages: {
-      'zh-CN': 'https://fxkiller.com/zh',
-      'en-US': 'https://fxkiller.com/en',
+      'zh-CN': 'https://yongxianli.com/zh',
+      'en-US': 'https://yongxianli.com/en',
     },
   },
   openGraph: {
     type: "website",
     locale: "zh_CN",
     alternateLocale: ["en_US"],
-    url: "https://fxkiller.com",
+    url: "https://yongxianli.com",
     siteName: "Yongxianli | 涌现力",
     title: "Yongxianli - Professional FX Trader Training Platform | 涌现力·职业交易员培训",
     description: "专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。",

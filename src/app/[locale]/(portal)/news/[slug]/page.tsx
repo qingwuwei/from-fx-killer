@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: NewsPageProps) {
 
   return generateBilingualMetadata(
     newsZh.title + '丨涌现力丨职业交易员培训、日内交易员培训',
-    newsEn.title + '丨FX Killer丨Professional Trader Training, Day Trader Training',
+    newsEn.title + '丨Yongxianli丨Professional Trader Training, Day Trader Training',
     newsZh.description,
     newsEn.description,
     newsZh.keywords.join(', ') + ', 职业交易员培训, 日内交易员培训',

@@ -32,7 +32,7 @@ export default function PageLoader() {
     };
   }, []);
 
-  const text = "涌现力 FxKiller";
+  const text = "涌现力 Yongxianli";
   const chars = text.split("");
   const textColor = isDark ? "#ffffff" : "#000000";
 

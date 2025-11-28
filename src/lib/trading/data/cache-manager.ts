@@ -15,7 +15,7 @@ interface CachedData {
   expiresAt: number;
 }
 
-const DB_NAME = 'fx-killer-market-data';
+const DB_NAME = 'yongxianli-market-data';
 const DB_VERSION = 1;
 const STORE_NAME = 'historical-data';
 const DEFAULT_TTL = 24 * 60 * 60 * 1000; // 24 hours in milliseconds

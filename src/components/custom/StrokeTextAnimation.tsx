@@ -169,7 +169,7 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
         />
       </svg>
 
-      {/* FxKiller - 英文动画 */}
+      {/* Yongxianli - 英文动画 */}
       <svg
         width="300"
         height="100"
@@ -178,9 +178,9 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
         xmlns="http://www.w3.org/2000/svg"
         className="overflow-visible"
       >
-        {/* F - 竖线 + 两条横线 */}
+        {/* Y - 竖线 + V形 */}
         <motion.path
-          d="M 20 30 L 20 70"
+          d="M 20 30 L 35 50"
           stroke={strokeColor}
           strokeWidth="5"
           strokeLinecap="round"
@@ -190,7 +190,7 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
           transition={{ ...transition, delay: 0 }}
         />
         <motion.path
-          d="M 20 30 L 45 30"
+          d="M 50 30 L 35 50"
           stroke={strokeColor}
           strokeWidth="5"
           strokeLinecap="round"
@@ -200,7 +200,7 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
           transition={{ ...transition, delay: 0.15 }}
         />
         <motion.path
-          d="M 20 50 L 40 50"
+          d="M 35 50 L 35 70"
           stroke={strokeColor}
           strokeWidth="5"
           strokeLinecap="round"
@@ -210,31 +210,9 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
           transition={{ ...transition, delay: 0.3 }}
         />
 
-        {/* x - 两条对角线同时画出 */}
-        <motion.path
-          d="M 55 35 L 75 65"
-          stroke={strokeColor}
-          strokeWidth="5"
-          strokeLinecap="round"
-          variants={pathVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ ...transition, delay: 0.45 }}
-        />
-        <motion.path
-          d="M 75 35 L 55 65"
-          stroke={strokeColor}
-          strokeWidth="5"
-          strokeLinecap="round"
-          variants={pathVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ ...transition, delay: 0.45 }}
-        />
-
-        {/* Killer - 使用文本路径动画 */}
+        {/* ongxianli - 使用文本路径动画 */}
         <motion.text
-          x="95"
+          x="55"
           y="60"
           fill={fillColor}
           fontSize="40"
@@ -243,9 +221,9 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
           variants={fillVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ...transition, delay: 0.6, duration: 0.5 }}
+          transition={{ ...transition, delay: 0.45, duration: 0.5 }}
         >
-          Killer
+          ongxianli
         </motion.text>
       </svg>
     </div>
